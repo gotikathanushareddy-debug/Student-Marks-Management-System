@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+:root { --ink:#18243a; --muted:#748096; --purple:#6558d3; --line:#e8eaf2; --bg:#f5f6fb; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font-family:'DM Sans',sans-serif; }
+.page { width:min(1080px,92%); margin:48px auto 24px; }
+.header { display:flex; align-items:center; gap:18px; margin-bottom:30px; }
+.logo { width:58px; height:58px; border-radius:17px; display:grid; place-items:center; color:white; font-weight:800; font-family:Manrope,sans-serif; font-size:20px; background:linear-gradient(135deg,#786be8,#4d46b6); box-shadow:0 9px 22px #6558d344; }
+.eyebrow { color:var(--purple); font-size:10px; letter-spacing:1.7px; font-weight:700; margin:0 0 7px; }
+h1,h2,h3,h4,p { margin-top:0; }
+h1 { font:800 clamp(22px,4vw,32px) Manrope,sans-serif; margin-bottom:5px; }
+.subtitle,.hint { color:var(--muted); margin-bottom:0; font-size:14px; }
+.layout { display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:start; }
+.panel { background:white; border:1px solid var(--line); border-radius:20px; padding:27px; box-shadow:0 12px 35px #24304a0a; }
+h2 { font:700 20px Manrope,sans-serif; margin-bottom:7px; }
+.form-panel .hint { margin-bottom:24px; }
+label { display:block; font-size:13px; font-weight:600; margin:15px 0 7px; }
+input { width:100%; border:1px solid #dfe3ed; border-radius:10px; padding:12px 13px; font:14px 'DM Sans',sans-serif; color:var(--ink); outline:none; background:#fff; }
+input:focus { border-color:var(--purple); box-shadow:0 0 0 3px #6558d31a; }
+.marks-heading { display:flex; justify-content:space-between; color:var(--muted); font-size:11px; font-weight:700; margin-top:24px; border-bottom:1px solid var(--line); padding-bottom:9px; }
+button { width:100%; border:0; border-radius:11px; background:var(--purple); color:white; font:700 14px 'DM Sans',sans-serif; padding:14px; margin-top:23px; cursor:pointer; transition:.2s; }
+button:hover { background:#5145bd; transform:translateY(-1px); }
+.message { min-height:18px; margin:10px 0 0; color:#c23e54; font-size:12px; }
+.result-top { display:flex; justify-content:space-between; align-items:center; }
+.result-top h2 { margin-bottom:0; }
+.result-icon { display:grid; place-items:center; width:39px; height:39px; border-radius:12px; background:#eeecff; color:var(--purple); font-size:20px; font-weight:700; }
+.empty-state { text-align:center; padding:55px 10px 45px; color:var(--muted); }
+.empty-icon { width:54px; height:54px; display:grid; place-items:center; margin:0 auto 16px; border-radius:16px; background:#f0efff; color:var(--purple); font-size:27px; }
+.empty-state h3 { color:var(--ink); font:700 16px Manrope,sans-serif; margin-bottom:7px; }
+.empty-state p { font-size:13px; line-height:1.6; margin:0; }
+.hidden { display:none; }
+.student-label { color:var(--muted); font-size:10px; letter-spacing:1.4px; font-weight:700; margin:28px 0 5px; }
+.result-content h3 { font:700 21px Manrope,sans-serif; margin-bottom:18px; }
+.stats { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+.stat { background:#f7f7fc; border:1px solid #efeff7; border-radius:13px; padding:15px; }
+.stat span,.grade-row span { display:block; color:var(--muted); font-size:11px; margin-bottom:8px; }
+.stat strong { display:block; font:800 25px Manrope,sans-serif; }
+.stat small { color:var(--muted); font-size:10px; }
+.grade-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; padding:17px 0; border-bottom:1px solid var(--line); }
+.grade-row strong { font:700 18px Manrope,sans-serif; }
+h4 { font:700 14px Manrope,sans-serif; margin:19px 0 10px; }
+.subject-row { display:flex; justify-content:space-between; padding:9px 0; border-bottom:1px solid #f0f1f6; font-size:12px; }
+.subject-row span:last-child { font-weight:700; }
+.secondary-btn { background:#eeecff; color:var(--purple); margin-top:20px; }
+.secondary-btn:hover { background:#e3e0ff; }
+footer { text-align:center; color:#929bad; font-size:11px; padding:24px 0; }
+@media (max-width:760px) { .page { margin-top:28px; } .layout { grid-template-columns:1fr; } .panel { padding:21px; } }
